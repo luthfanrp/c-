@@ -12,3 +12,13 @@ int main()
     }
     return 0;
 }
+
+
+-----OUTPUT--------
+    
+    HURUF-1= A
+    HURUF-2= B
+    HURUF-3= C
+    HURUF-4= D
+    HURUF-5= E
+    HURUF-6= F
