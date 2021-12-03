@@ -1,0 +1,32 @@
+#include <iostream>
+
+
+using namespace std;
+
+int main()
+{
+
+int siswa, hadiah_07397, pajak, setelah_pajak, total_hadiah_peranak;
+
+hadiah_07397= 10500000;
+
+pajak = hadiah_07397* 20/100;
+setelah_pajak = hadiah_07397-pajak;
+
+cout<<"masukkan jumlah siswa : ";
+cin >> siswa;
+
+total_hadiah_peranak = setelah_pajak/siswa;
+
+cout << total_hadiah_peranak;
+
+
+
+}
+
+
+--------OUTPUT----------
+
+masukkan jumlah siswa : 1
+8400000
+  
