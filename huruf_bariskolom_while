@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+
+
+
+int main() {
+
+	int Baris_07415, Kolom_07415;
+	char Huruf_07415 = 'A';
+
+	cout << "masukkan baris : ";
+	cin >> Baris_07415;
+	cout << "masukkan kolom : ";
+	cin >> Kolom_07415;
+	cout << "\n";
+
+	int i_07415 = 0;
+	while (i_07415 < Baris_07415) {
+		int j_07415 = 0;
+		while (j_07415 < Kolom_07415) {
+
+			cout << Huruf_07415 << "";
+
+			if (j_07415 % 2 == 0) {
+				Huruf_07415 = Huruf_07415 - 2;
+			}
+
+			Huruf_07415 = Huruf_07415 + 2;
+			j_07415++;
+		}
+		printf("\n");
+		i_07415++;
+	}
+
+}
+
+
+-----------OUTPUT-----------
+masukkan baris : 2
+masukkan baris : 2
+
+AA
+CC
+-----------OUTPUT-----------
+masukkan baris : 7
+masukkan kolom : 7
+
+AACCEEG
+GGIIKKM
+MMOOQQS
+SSUUWWY
+YY[[]]_
+__aacce
+eeggiik
+
+
