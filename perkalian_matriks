@@ -1,0 +1,97 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a_07397[10][10], b_07397[10][10], kali_07397[10][10], baris1_07397, kolom1_07397, baris2_07397, kolom2_07397, i_07397, j_07397, k_07397;
+
+    cout << "PERKALIAN MATRIKS" << endl;
+    cout <<endl;
+
+    cout << "Masukkan baris dan kolom matriks pertama: ";
+    cin >> baris1_07397 >> kolom1_07397;
+    cout << "Masukkan baris dan kolomm matriks kedua: ";
+    cin >> baris2_07397 >> kolom2_07397;
+
+
+    while (kolom1_07397!=baris2_07397)
+    {
+        cout << "Error! kolom matriks pertama tidak sama dengan baris kedua.";
+
+        cout << "Masukkan baris dan kolom matriks pertama: ";
+        cin >> baris1_07397 >> kolom1_07397;
+
+        cout << "Masukkan baris dan kolom untuk matriks ke-dua: ";
+        cin >> baris2_07397 >> kolom2_07397;
+    }
+
+
+    cout << endl << "Masukkan elemen matriks 1:" << endl;
+    for(i_07397 = 0; i_07397 < baris1_07397; ++i_07397)
+        for(j_07397 = 0; j_07397 < kolom1_07397; ++j_07397)
+        {
+            cout << "Masukkan elemen a" << i_07397 + 1 << j_07397 + 1 << " : ";
+            cin >> a_07397[i_07397][j_07397];
+        }
+
+
+    cout << endl << "Masukkan elemn matriks 2:" << endl;
+    for(i_07397 = 0; i_07397 < baris2_07397; ++i_07397)
+        for(j_07397 = 0; j_07397 < kolom2_07397; ++j_07397)
+        {
+            cout << "masukkan elemen b" << i_07397 + 1 << j_07397 + 1 << " : ";
+            cin >> b_07397[i_07397][j_07397];
+        }
+
+
+    for(i_07397 = 0; i_07397 < baris1_07397; ++i_07397)
+        for(j_07397 = 0; j_07397 < kolom2_07397; ++j_07397)
+        {
+            kali_07397[i_07397][j_07397]=0;
+        }
+
+
+    for(i_07397 = 0; i_07397 < baris1_07397; ++i_07397)
+        for(j_07397 = 0; j_07397 < kolom2_07397; ++j_07397)
+            for(k_07397 = 0; k_07397 < kolom1_07397; ++k_07397)
+            {
+                kali_07397[i_07397][j_07397] += a_07397[i_07397][k_07397] * b_07397[k_07397][j_07397];
+            }
+
+
+    cout << endl << "Hasil Matriks: " << endl;
+    for(i_07397 = 0; i_07397 < baris1_07397; ++i_07397)
+    for(j_07397 = 0; j_07397 < kolom2_07397; ++j_07397)
+    {
+        cout << " " << kali_07397[i_07397][j_07397];
+        if(j_07397 == kolom2_07397-1)
+            cout << endl;
+    }
+
+    return 0;
+}
+
+
+-----------------OUTPUT-----------------
+PERKALIAN MATRIKS
+
+Masukkan baris dan kolom matriks pertama: 2
+2
+Masukkan baris dan kolomm matriks kedua: 2
+2
+
+Masukkan elemen matriks 1:
+Masukkan elemen a11 : 6
+Masukkan elemen a12 : 5
+Masukkan elemen a21 : 4
+Masukkan elemen a22 : 3
+
+Masukkan elemn matriks 2:
+masukkan elemen b11 : 2
+masukkan elemen b12 : 3
+masukkan elemen b21 : 4
+masukkan elemen b22 : 1
+
+Hasil Matriks:
+ 32 23
+ 20 15
