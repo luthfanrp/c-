@@ -1,0 +1,79 @@
+#include <iostream>
+#include <string.h>
+#include <conio.h>
+
+
+using namespace std;
+
+int main()
+{
+    int i;
+    char masukkan_kalimat_07397 [100];
+    char masukkan_kalimat2_07397 [100];
+    char masukkan_kalimat3_07397 [100];
+    char ejaan_lama [100];
+
+    cout << "Masukkan kalimat : " ;
+    gets (masukkan_kalimat_07397);
+strcpy(masukkan_kalimat2_07397,masukkan_kalimat_07397);
+
+    strrev (masukkan_kalimat2_07397);
+
+    cout << "Kalimat dibalik : " << masukkan_kalimat2_07397 << endl;
+
+
+
+     cout<< "Ejaan Lama : ";
+        for (char i=0; i<=1000; i++){
+            if (masukkan_kalimat_07397[i]== '\0')
+            {
+                break;
+            }
+            else {
+                switch (masukkan_kalimat_07397[i]){
+                case 'a': {printf("a");}break;
+                case 'b': {printf("b");}break;
+                case 'c': {printf("tj");}break;
+                case 'd': {printf("d");}break;
+                case 'e': {printf("e");}break;
+                case 'f': {printf("f");}break;
+                case 'g': {printf("g");}break;
+                case 'h': {printf("h");}break;
+                case 'i': {printf("i");}break;
+                case 'j': {printf("dj");}break;
+                case 'k': {printf("k");}break;
+                case 'l': {printf("l");}break;
+                case 'm': {printf("m");}break;
+                case 'n': {printf("n");}break;
+                case 'o': {printf("o");}break;
+                case 'p': {printf("p");}break;
+                case 'q': {printf("q");}break;
+                case 'r': {printf("r");}break;
+                case 's': {printf("s");}break;
+                case 't': {printf("t");}break;
+                case 'u': {printf("oe");}break;
+                case 'v': {printf("v");}break;
+                case 'w': {printf("w");}break;
+                case 'x': {printf("x");}break;
+                case 'y': {printf("j");}break;
+                case 'z': {printf("z");}break;
+                case ' ': {printf(" ");}break;
+                case '+': {printf("+");}break;
+                }
+            }
+        }
+
+
+    //getch();
+
+
+
+}
+
+
+
+
+----------------OUTPUT----------------
+Masukkan kalimat : surabaya jawa timur
+Kalimat dibalik : rumit awaj ayabarus
+Ejaan Lama : soerabaja djawa timoer
