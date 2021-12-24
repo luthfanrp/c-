@@ -167,3 +167,57 @@ selesai_07397:
 
 return 0;
 }
+
+
+
+
+---------OUTPUT---------
+STANDBY
+STANDBY
+STANDBY
+STANDBY
+SELAMAT DATANG LANJUTKAN (Y/N) : y
+
+    system("cls");
+BUKA BUKU MENU (Y/N) : y
+
+
+    system("cls");
+                WARKOP
+      Harga                   Menu
+1.   Rp.3000               kopi hitam
+2. Rp.4000               kopi moka
+3.   Rp.3500                kopi susu
+4. Rp.10000              es teh hangat
+5.   Rp.5000               es kopi hangat
+6. Rp.5000             mie goreng rebus
+7.   Rp.10000               es jeruk hangat
+
+ Pilih nomer  : 1
+kopi hitam
+Jumlah Pesanan =2
+
+Total harga yaitu =6000
+DIBAYAR =10000
+
+Kembalian =4000
+Anda Ingin Mengulangi Lagi (Y/N) : y
+
+
+
+     system("cls");
+  WARKOP
+      Harga                   Menu
+1.   Rp.3000               kopi hitam
+2. Rp.4000               kopi moka
+3.   Rp.3500                kopi susu
+4. Rp.10000              es teh hangat
+5.   Rp.5000               es kopi hangat
+6. Rp.5000             mie goreng rebus
+7.   Rp.10000               es jeruk hangat
+
+ Pilih nomer  :
+
+ 
+
+
