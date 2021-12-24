@@ -1,0 +1,169 @@
+#include <iostream>
+#include <conio.h>
+#include <windows.h>
+using namespace std;
+int main ()
+{
+char lagi_07397,bukumenu_07397,standby_07397;
+int nama_07397,pilihan_07397,jumlah_pesanan_07397,dibayar_07397,harga_07397,total_07397,pilihmenu_07397;
+
+standby_07397:
+    cout << "STANDBY"<<endl;
+    cout << "STANDBY"<< endl;
+    cout << "STANDBY"<< endl;
+    cout << "STANDBY" << endl;
+     cout<<"SELAMAT DATANG LANJUTKAN (Y/N) : ";
+    cin>>standby_07397;
+
+     if(standby_07397=='n' || standby_07397=='N'){
+            goto standby_07397;
+        }
+
+    if(standby_07397=='y' || standby_07397=='Y'){
+            goto pembuka_07397;
+        }
+
+
+pembuka_07397:
+    system ("cls");
+     cout<<"BUKA BUKU MENU (Y/N) : ";
+    cin>>bukumenu_07397;
+        if(bukumenu_07397=='y' || bukumenu_07397=='Y'){
+            goto awal_07397;
+        }
+        if (bukumenu_07397=='n' || bukumenu_07397=='N'){
+            goto standby_07397;
+        }
+
+awal_07397:
+    system("cls");
+    cout<<"             WARKOP       "<<endl;
+    cout<<"      Harga                   Menu"<<endl;
+    cout<<"1.   Rp.3000               kopi hitam"<<endl;
+    cout<<"2. Rp.4000               kopi moka"<<endl;
+    cout<<"3.   Rp.3500                kopi susu"<<endl;
+    cout<<"4. Rp.10000              es teh hangat"<<endl;
+    cout<<"5.   Rp.5000               es kopi hangat"<<endl;
+    cout<<"6. Rp.5000             mie goreng rebus"<<endl;
+    cout<<"7.   Rp.10000               es jeruk hangat"<<endl;
+    cout<<endl;
+
+
+
+    cout<<" Pilih nomer  : ";
+    cin>>pilihmenu_07397;
+
+    switch(pilihmenu_07397)
+    {
+
+    case 1 :
+        cout<<"kopi hitam"<<endl;
+        harga_07397=3000;
+        cout<<"Jumlah Pesanan =";
+        cin>>jumlah_pesanan_07397;
+        cout<<endl;
+        total_07397 = jumlah_pesanan_07397*harga_07397;
+        cout<<"Total harga yaitu ="<<total_07397<<endl;
+        cout<<"DIBAYAR =";
+        cin>>dibayar_07397;
+        cout<<endl;
+        cout<<"Kembalian ="<<dibayar_07397-total_07397<<endl;
+        break;
+    case 2 :
+        cout<<"kopi moka"<<endl;
+        harga_07397=4000;
+        cout<<"Masukkan Jumlah =";
+        cin>>jumlah_pesanan_07397;
+        cout<<endl;
+        total_07397 = jumlah_pesanan_07397*harga_07397;
+        cout<<"Total harga yaitu ="<<total_07397<<endl;
+        cout<<"DIBAYAR =";
+        cin>>dibayar_07397;
+        cout<<endl;
+        cout<<"Kembalian ="<<dibayar_07397-total_07397<<endl;
+        break;
+    case 3 :
+        cout<<"kopi susu"<<endl;
+        harga_07397=3500;
+        cout<<"Masukkan Jumlah =";
+        cin>>jumlah_pesanan_07397;
+        cout<<endl;
+        total_07397 = jumlah_pesanan_07397*harga_07397;
+        cout<<"Total harga yaitu ="<<total_07397<<endl;
+        cout<<"DIBAYAR =";
+        cin>>dibayar_07397;
+        cout<<endl;
+        cout<<"Kembalian ="<<dibayar_07397-total_07397<<endl;
+        break;
+    case 4 :
+        cout<<"es teh hangat"<<endl;
+        harga_07397=10000;
+        cout<<"Masukkan Jumlah =";
+        cin>>jumlah_pesanan_07397;
+        cout<<endl;
+        total_07397 = jumlah_pesanan_07397*harga_07397;
+        cout<<"Total harga yaitu ="<<total_07397<<endl;
+        cout<<"DIBAYAR =";
+        cin>>dibayar_07397;
+        cout<<endl;
+        cout<<"Kembalian ="<<dibayar_07397-total_07397<<endl;
+        break;
+    case 5 :
+        cout<<"es kopi hangat"<<endl;
+        harga_07397=5000;
+        cout<<"Masukkan Jumlah =";
+        cin>>jumlah_pesanan_07397;
+        cout<<endl;
+        total_07397 = jumlah_pesanan_07397*harga_07397;
+        cout<<"Total harga yaitu ="<<total_07397<<endl;
+        cout<<"DIBAYAR =";
+        cin>>dibayar_07397;
+        cout<<endl;
+        cout<<"Kembalian ="<<dibayar_07397-total_07397<<endl;
+        break;
+    case 6 :
+        cout<<"mie goreng rebus"<<endl;
+        harga_07397=5000;
+        cout<<"Masukkan Jumlah =";
+        cin>>jumlah_pesanan_07397;
+        cout<<endl;
+        total_07397 = jumlah_pesanan_07397*harga_07397;
+        cout<<"Total harga yaitu ="<<total_07397<<endl;
+        cout<<"DIBAYAR =";
+        cin>>dibayar_07397;
+        cout<<endl;
+        cout<<"Kembalian ="<<dibayar_07397-total_07397<<endl;
+        break;
+    case 7 :
+        cout<<"es jeruk hangat"<<endl;
+        harga_07397=10000;
+        cout<<"Masukkan Jumlah =";
+        cin>>jumlah_pesanan_07397;
+        cout<<endl;
+        total_07397 = jumlah_pesanan_07397*harga_07397;
+        cout<<"Total harga yaitu ="<<total_07397<<endl;
+        cout<<"DIBAYAR =";
+        cin>>dibayar_07397;
+        cout<<endl;
+        cout<<"Kembalian ="<<dibayar_07397-total_07397<<endl;
+        break;
+    default:
+    cout<<"SALAH!!!! ANDA HARUS MEMASUKKAN SESUAI DAFTAR"<<endl;
+    }
+    cout<<"Anda Ingin Mengulangi Lagi (Y/N)";
+    cin>>lagi_07397;
+        if(lagi_07397=='y' || lagi_07397=='Y'){
+            goto awal_07397;
+        }
+        if (lagi_07397=='N' || lagi_07397=='n'){
+            goto selesai_07397;
+        }
+        if (lagi_07397=='p' || lagi_07397=='p'){
+            goto pembuka_07397;
+        }
+selesai_07397:
+    system("cls");
+    cout<<"Terima Kasih Telah Berkunjung di WARKOP ITATS"<<endl;
+
+return 0;
+}
