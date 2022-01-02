@@ -1,0 +1,52 @@
+  header.h
+  
+#include<iostream>
+using namespace std;
+extern int pola(int x, int y, int z);
+int pola (int x, int y, int z)
+{
+	if(y<x)
+	{
+		if(z<x){
+			if(z<x-y)
+			{
+				if(z %3 ==0) cout<<"+ ";
+				else if (z %3 ==1) cout<<"@ ";
+				else cout<<"# ";
+			}
+			else
+			{
+				cout<<" ";
+			}
+			return pola(x,y,z+1);
+		}
+		cout<<endl;
+		return pola(x,y+1,0);
+	}
+}
+
+
+  main.cpp
+
+#include"header.h"
+main()
+{
+	int input;
+	cout<<"input :";
+	cin>>input;
+	cout<<"output :";
+	cout<<endl;
+	pola(input,1,0);
+}
+
+
+
+-----------OUTPUT-----------
+input :7
+output :
++ @ # + @ #
++ @ # + @
++ @ # +
++ @ #
++ @
++
