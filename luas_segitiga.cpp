@@ -17,3 +17,10 @@ int main(){
 
   return 0;
 }
+
+
+----------OUTPUT----------
+Masukkan panjang alas: 50
+Masukkan tinggi segitiga: 50
+Luas segitiga adalah 1250 
+ 
